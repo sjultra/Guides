@@ -64,7 +64,7 @@ Unzip the archive you just download either way
 
 	apt install -y qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils virt-manager
 <br/>
-Set up the network creating the bridges. Like we said earlier we need 2 networks so we have to create 2 network bridges on the server
+Set up the network creating the bridges. Like we said earlier we need 2 networks so we have to create 2 network bridges on the server. In the bridge virbr0 we will add the interface connected to the ISP line and the other bridge, virbr1 will be used for future VM's created in our one-node infrastructure.
 
 	brctl addbr virbr0 && brctl addbr virbr1
 <br/>
