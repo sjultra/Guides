@@ -188,4 +188,4 @@ Click on add and then on Service Type select Cloudflare and then insert your hos
 
 ![enter image description here](https://github.com/sjultra/Guides/blob/main/pfSense_install_one-node_infrastructure/images/22.png?raw=true)
 
-
+On password you have to introduce the API key you just copied.
