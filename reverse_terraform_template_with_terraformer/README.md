@@ -16,6 +16,7 @@ Download the packages for Terraformer from git
 
 	curl -LO https://github.com/GoogleCloudPlatform/terraformer/releases/download/$(curl -s https://api.github.com/repos/GoogleCloudPlatform/terraformer/releases/latest | grep tag_name | cut -d '"' -f 4)/terraformer-${PROVIDER}-darwin-amd64
 
+![](https://github.com/sjultra/Guides/blob/main/reverse_terraform_template_with_terraformer/images/1.png?raw=true)
 
 Give execute permission:
 
@@ -47,12 +48,15 @@ Paste the following lines
 Initialize terraform
 
 	teraform init
-poza
+
+!()[https://github.com/sjultra/Guides/blob/main/reverse_terraform_template_with_terraformer/images/2.png?raw=true]
 
 Use now Terraformer to export your infrastructure as a code. 
 Chose your resources (firewall, instances, networks, etc), region and the project from where you want to import.
 
     terraformer import google --resources=firewall,instances,networks,subnetworks --regions=<us-central1> --projects=<your_project_id>
+    
+!()[https://github.com/sjultra/Guides/blob/main/reverse_terraform_template_with_terraformer/images/3.png?raw=true]
 
 If you want to import other resources options, check the list below:
 
