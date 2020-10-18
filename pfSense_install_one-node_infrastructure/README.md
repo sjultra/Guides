@@ -127,43 +127,44 @@ The system will ask you to choose 1 interface as the external interface [WAN] an
 
 Instalation complete
 
-![enter image description here](https://github.com/sjultra/Guides/blob/main/pfSense_install_one-node_infrastructure/images/10.png?raw=true)
 
 ## pfSense Dashboard Login
 
 Log in using the following URL https://10.10.1.1 and default credentials
  - Username: admin  
  - Password: pfsense
-![enter image description here](https://github.com/sjultra/Guides/blob/main/pfSense_install_one-node_infrastructure/images/11.png?raw=true)
+ 
+ 
+![enter image description here](https://github.com/sjultra/Guides/blob/main/pfSense_install_one-node_infrastructure/images/25.png?raw=true)
 
 
 ## pfSense Setup Wizard
 
-On step 1 and 2 just simply click Next. On third step set a Hostname and a domain if you have one and the Primary and Secondary DNS Server 8.8.4.4 or 8.8.8.8 and 1.1.1.1
+On step 1 simply click Next. On second step set a hostname and a domain if you have one and the Primary and Secondary DNS Server 8.8.4.4 or 8.8.8.8 and 1.1.1.1
 
 ![enter image description here](https://github.com/sjultra/Guides/blob/main/pfSense_install_one-node_infrastructure/images/12.png?raw=true)
 
-Step 4 perform the Timezone and NTP server configuration.
+Step 3 perform the Timezone and NTP server configuration.
 
 ![enter image description here](https://github.com/sjultra/Guides/blob/main/pfSense_install_one-node_infrastructure/images/13.png?raw=true)
 
-Step 5 select the configuration of the WAN interface. PPPoE in our case.
+Step 4 select the configuration of the WAN interface. If there is a router conected to your ISP, leave on DHCP if not select the option that meets your needs.
 
 ![enter image description here](https://github.com/sjultra/Guides/blob/main/pfSense_install_one-node_infrastructure/images/14.png?raw=true)
 
-Step 6 configure the LAN interface
+Step 5 configure the LAN interface
 
 ![enter image description here](https://github.com/sjultra/Guides/blob/main/pfSense_install_one-node_infrastructure/images/15.png?raw=true)
 
 
-Step 7 set up the admin password
+Step 6 set up the admin password
 
 ![enter image description here](https://github.com/sjultra/Guides/blob/main/pfSense_install_one-node_infrastructure/images/16.png?raw=true)
 
 
-On step 8 check and on 9 reload the pfSense configuration and you are done
+On step 7 check and on 8 reload the pfSense configuration and you are done
 
-![enter image description here](https://github.com/sjultra/Guides/blob/main/pfSense_install_one-node_infrastructure/images/17.png?raw=true)
+![enter image description here](https://github.com/sjultra/Guides/blob/main/pfSense_install_one-node_infrastructure/images/16.5.png?raw=true)
 
 ## Cloudflare DDNS
 Supposing you already have a domain and an account set up on Cloudflare log in and go to My Profile
@@ -182,10 +183,10 @@ Cop
 ## Set up pfSense DDNS
 Go to your pfSense dashboard and from the Service menu, select Dynamic DNS
 
-![enter image description here](https://github.com/sjultra/Guides/blob/main/pfSense_install_one-node_infrastructure/images/21.png?raw=true)
+![enter image description here](https://github.com/sjultra/Guides/blob/main/pfSense_install_one-node_infrastructure/images/22.png?raw=true)
 
 Click on add and then on Service Type select Cloudflare and then insert your hostname and your domain name
 
-![enter image description here](https://github.com/sjultra/Guides/blob/main/pfSense_install_one-node_infrastructure/images/22.png?raw=true)
+Lower insert your username and on password you have to introduce the API key you just copied.
 
-On password you have to introduce the API key you just copied.
+![enter image description here](https://github.com/sjultra/Guides/blob/main/pfSense_install_one-node_infrastructure/images/24.png?raw=true)
