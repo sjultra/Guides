@@ -118,10 +118,10 @@ Press Enter to reboot the VM
 ![enter image description here](https://github.com/sjultra/Guides/blob/main/pfSense_install_one-node_infrastructure/images/8.png?raw=true)
 
 
-After rebooting, will ask if you need to configure VLANs. We do not have VLANs so hit n
-
-Next the system will try to detect the list of available network interfaces.
-The system will ask you to choose 1 interface as the external interface [WAN] and 1 for [LAN].  In our example we have em0 for WAN and em1 for LAN
+After rebooting, it will ask to configure VLANs. If your env does not have any vlans insert no, if it has, insert yes
+The system will list all available network interfaces. Chose the parent interface name of the vlan
+Enter the vlan tag
+Next the system will ask you to choose 1 interface as the external interface [WAN] and 1 for [LAN].  In our example we have em0 for WAN and em1 for LAN
 
 ![enter image description here](https://github.com/sjultra/Guides/blob/main/pfSense_install_one-node_infrastructure/images/9.png?raw=true)
 
