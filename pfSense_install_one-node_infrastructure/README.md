@@ -183,10 +183,10 @@ Cop
 ## Set up pfSense DDNS
 Go to your pfSense dashboard and from the Service menu, select Dynamic DNS
 
-![enter image description here](https://github.com/sjultra/Guides/blob/main/pfSense_install_one-node_infrastructure/images/22.png?raw=true)
+![enter image description here](https://github.com/sjultra/Guides/blob/main/pfSense_install_one-node_infrastructure/images/24.png?raw=true)
 
 Click on add and then on Service Type select Cloudflare and then insert your hostname and your domain name
 
 Lower insert your username and on password you have to introduce the API key you just copied.
 
-![enter image description here](https://github.com/sjultra/Guides/blob/main/pfSense_install_one-node_infrastructure/images/24.png?raw=true)
+![enter image description here](https://github.com/sjultra/Guides/blob/main/pfSense_install_one-node_infrastructure/images/22.png?raw=true)
