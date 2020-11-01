@@ -1,3 +1,17 @@
+   <!-- Copyright 2020 SJULTRA, inc.
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License. -->
+
 # Install and config pfSense for one-node infrastructure and access it from anywhere with DDNS on Cloudflare
 
 ## One-node infrastructure
@@ -118,10 +132,10 @@ Press Enter to reboot the VM
 ![enter image description here](https://github.com/sjultra/Guides/blob/main/pfSense_install_one-node_infrastructure/images/8.png?raw=true)
 
 
-After rebooting, will ask if you need to configure VLANs. We do not have VLANs so hit n
-
-Next the system will try to detect the list of available network interfaces.
-The system will ask you to choose 1 interface as the external interface [WAN] and 1 for [LAN].  In our example we have em0 for WAN and em1 for LAN
+After rebooting, it will ask to configure VLANs. If your env does not have any vlans insert no, if it has, insert yes
+The system will list all available network interfaces. Chose the parent interface name of the vlan
+Enter the vlan tag
+Next the system will ask you to choose 1 interface as the external interface [WAN] and 1 for [LAN].  In our example we have em0 for WAN and em1 for LAN
 
 ![enter image description here](https://github.com/sjultra/Guides/blob/main/pfSense_install_one-node_infrastructure/images/9.png?raw=true)
 
@@ -183,10 +197,10 @@ Cop
 ## Set up pfSense DDNS
 Go to your pfSense dashboard and from the Service menu, select Dynamic DNS
 
-![enter image description here](https://github.com/sjultra/Guides/blob/main/pfSense_install_one-node_infrastructure/images/22.png?raw=true)
+![enter image description here](https://github.com/sjultra/Guides/blob/main/pfSense_install_one-node_infrastructure/images/24.png?raw=true)
 
 Click on add and then on Service Type select Cloudflare and then insert your hostname and your domain name
 
 Lower insert your username and on password you have to introduce the API key you just copied.
 
-![enter image description here](https://github.com/sjultra/Guides/blob/main/pfSense_install_one-node_infrastructure/images/24.png?raw=true)
+![enter image description here](https://github.com/sjultra/Guides/blob/main/pfSense_install_one-node_infrastructure/images/22.png?raw=true)
