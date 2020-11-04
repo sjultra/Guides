@@ -1,6 +1,6 @@
-# Straight-forward Docker engine install on Ubuntu and CentOS
+# Straight-forward Docker engine install on Ubuntu, CentOS/RHEL and Debian
 
-# 1. Install on Centos
+# 1. Install on Centos/RHEL
 
 ## Prerequisites
 
