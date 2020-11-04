@@ -4,7 +4,7 @@
 
 ## Prerequisites
 
-Uninstall older version of docker
+If you have older Docker version, uninstall them.
 
 ```
 sudo yum remove docker \
@@ -22,7 +22,7 @@ It’s OK if yum reports that none of these packages are installed.
 
 ## SET UP THE REPOSITORY
 
-Update the apt package index and install packages to allow apt to use a repository over HTTPS:
+Update the yum package and add the repo
 
 ```
 sudo yum install -y yum-utils
@@ -36,7 +36,7 @@ sudo yum-config-manager \
 
 	sudo yum install docker-ce docker-ce-cli containerd.io
 
-Start Docker
+###  Start Docker
 
 	sudo systemctl start docker
 
@@ -45,12 +45,13 @@ Verity that Docker Engine is installed correctly
 	sudo docker run hello-world
 
 
-## If you want to unninstall Docker, use the following commands
+## If you want to uninstall Docker, use the following commands
 
 ```
 sudo yum remove docker-ce docker-ce-cli containerd.io
 sudo rm -rf /var/lib/docker
 ```
+<br>
 
 # 2. Install on Ubuntu
 
@@ -64,7 +65,7 @@ To get started with Docker Engine on Ubuntu, make sure you have one of following
 
 Uninstall older version of docker
 
-        sudo apt-get remove docker docker-engine docker.io containerd runc
+	sudo apt-get remove docker docker-engine docker.io containerd runc
 
 
 It’s OK if apt-get reports that none of these packages are installed.
