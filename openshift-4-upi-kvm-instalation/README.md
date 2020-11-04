@@ -2,7 +2,12 @@
 
 ## Prerequisites
 
-Openshift 4.5.6 UPI instalation for who wants to try, learn or teach how to deploy Opneshift 4 on his Server.
+Openshift 4.5.6 UPI instalation for who wants to try, learn or teach how to deploy Opneshift 4 on a server. Deployment made using [Redhat Opeshift Baremetal procedure](https://docs.openshift.com/container-platform/4.5/installing/installing_bare_metal/installing-bare-metal.html) as reference
+
+
+
+
+
 Now let's check if your Server's OS it's up to date and install and enable libvirt/KVM to create the vm's 
 
 ```
