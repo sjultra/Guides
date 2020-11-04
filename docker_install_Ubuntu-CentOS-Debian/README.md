@@ -116,4 +116,70 @@ Verity that Docker Engine is installed correctly
 ```
 sudo apt-get purge docker-ce docker-ce-cli containerd.io
 sudo rm -rf /var/lib/docker
+```
+
+<br>
+
+# 3. Install on Debian
+
+## Prerequisites
+
+To get started with Docker Engine on Ubuntu, make sure you have one of following OS
+
+- Debian Buster 10 (stable)
+- Debian Stretch 9 / Raspbian Stretch
+
+Uninstall older version of docker
+
+	sudo apt-get remove docker docker-engine docker.io containerd runc
+
+It’s OK if apt-get reports that none of these packages are installed.
+
+
+## SET UP THE REPOSITORY
+
+1. Update the apt package index and install packages to allow apt to use a repository over HTTPS:
+
+```
+sudo apt-get update
+
+sudo apt-get install \
+apt-transport-https \
+ca-certificates \
+curl \
+gnupg-agent \
+software-properties-common
+```
+
+2. Add Docker’s official GPG key:
+
+	curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+
+3. Setup the stable repository
+
+```
+sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/debian \
+   $(lsb_release -cs) \
+   stable"
+```
+
+## Install Docker 
+
+```
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+```
+
+Verity that Docker Engine is installed correctly
+
+        sudo docker run hello-world
+
+
+## If you want to unninstall Docker, use the following commands
+
+```
+sudo rm -rf /var/lib/docker
+sudo rm -rf /var/lib/containerd
+```
 
